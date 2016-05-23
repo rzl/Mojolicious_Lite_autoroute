@@ -5,7 +5,7 @@ my $USERS = '123';
 sub new { bless {}, shift }
 
 sub check {
-print @_."\n";
+
   my ($self, $pass) = @_;
 	
   # Success
