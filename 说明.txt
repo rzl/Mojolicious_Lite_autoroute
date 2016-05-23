@@ -1,0 +1,20 @@
+
+建议打开1.cmd后 使用下面命令运行
+morbo -w ./Controllers -w ./Models -w ./templates ./myapp.pl
+
+
+注意:perl大小写区分，尽量不要使用驼峰手法，以免出现错误。
+
+1.自动载入controllers和models目录下的所有模块
+2._auto_route 实现简单的路由映射到函数
+
+路径映射到指定的子函数和方法
+any '/bb/*' => sub{ _auto_route(shift)};
+===
+http://localhost:3000/bb/Login/login
+
+bb/Login/login
+controllers文件夹 -》 bb文件夹 -》 Login.pm -》login 方法
+
+注意Login.pm 中 package 的命名 package bb::Login;
+注意大小写。。。

@@ -1,0 +1,4 @@
+<FORM ACTION='login' METHOD='POST'>  
+<INPUT type=password maxLength=10 size=10 name=password>:  
+<INPUT id=login type=submit value='login' name=login>  
+</FORM>
